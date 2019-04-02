@@ -1,5 +1,7 @@
 <h1>hello kitty</h1>
 
+<%= link_to "add", new_animal_path  %>
+
 <% @animals.each do |animal| %>
   <h2><%= animal.breed %></h2>
   <p><%= animal.color %></p>
@@ -8,6 +10,7 @@
 
   <%= link_to "detail", animal %>
 <% end %>
+
 
 
 
