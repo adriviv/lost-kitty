@@ -1,11 +1,12 @@
 Animal.destroy_all
 
-10.times  do
+11.times  do
   Animal.create!(
     breed: Faker::Creature::Animal.name,
     color: Faker::Color.color_name,
     description: Faker::TvShows::FamilyGuy.quote,
-    contact: Faker::PhoneNumber.phone_number
+    contact: Faker::PhoneNumber.phone_number,
+    location: Faker::Address.city
     )
 
 end
