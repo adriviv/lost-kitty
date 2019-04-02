@@ -1,0 +1,14 @@
+<h1>hello kitty</h1>
+
+<% @animals.each do |animal| %>
+  <h2><%= animal.breed %></h2>
+  <p><%= animal.color %></p>
+  <p><%= animal.description %></p>
+
+
+  <%= link_to "detail", animal %>
+<% end %>
+
+
+
+

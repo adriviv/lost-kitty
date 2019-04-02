@@ -1,0 +1,15 @@
+<%= form_for(@animal) do |f| %>
+
+  <%= f.label :breed, 'Enter a breed'%>
+  <%= f.text_field :breed %>
+
+
+  <%= f.label :color, 'Enter color'%>
+  <%= f.text_field :color %>
+
+  <%= f.label :description, 'Enter description'%>
+  <%= f.text_field :description %>
+
+
+  <%= f.submit %>
+<% end %>
